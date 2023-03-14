@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayQRComponent,
-    ScanQRComponent
+    ScanQRComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
