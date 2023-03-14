@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { HomeComponent } from './pages/home/home.component';
+import { QRCodeModule } from 'angularx-qrcode';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './pages/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

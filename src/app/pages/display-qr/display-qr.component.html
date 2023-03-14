@@ -7,5 +7,31 @@
   </ion-toolbar>
 </ion-header> 
 <ion-content>
-  <h1>Hola</h1>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-button color="secondary" (click)="genQrCode()">Generar código QR</ion-button>
+      </ion-col>
+      <ion-col size="10" sizeMd="3" class="ion-text-center">
+        <qrcode
+          [qrdata]="qrCode"
+          [allowEmptyString]="true"
+          [cssClass]="'center'"
+          [colorDark]="'#000000ff'"
+          [colorLight]="'#ffffffff'"
+          [elementType]="'canvas'"
+          [errorCorrectionLevel]="'M'"
+          [title]="'Código QR'"
+          [width]="300"
+          *ngIf="qrCode != ''"
+        ></qrcode>
+        <div class="ion-text-center">
+          <h3>{{ qrCode }}</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="centrar-boton-ionic">
+    
+  </div>
 </ion-content>
