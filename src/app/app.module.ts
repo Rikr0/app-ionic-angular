@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IonicModule } from '@ionic/angular';
+import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
+import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DisplayQRComponent,
+    ScanQRComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
