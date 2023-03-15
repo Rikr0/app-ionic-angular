@@ -1,1 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+body.scanner-active {
+  --background: transparent;
+  --ion-background-color: transparent;
+}

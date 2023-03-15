@@ -8,6 +8,8 @@ import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QRCodeModule } from 'angularx-qrcode';
+// import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+// import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { QRCodeModule } from 'angularx-qrcode';
     IonicModule.forRoot(),
     QRCodeModule
   ],
-  providers: [],
+  providers: [
+    // BarcodeScanner,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
