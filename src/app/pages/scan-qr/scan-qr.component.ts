@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
@@ -7,16 +7,16 @@ import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
   selector: 'app-scan-qr',
   templateUrl: './scan-qr.component.html'
 })
-export class ScanQRComponent {
-  // export class ScanQRComponent implements OnDestroy {
+// export class ScanQRComponent {
+export class ScanQRComponent implements OnDestroy {
   data: any;
   photos: string[] = [];
   scannedResult: any;
   content_visibility = '';
   constructor() {}
-  // ngOnDestroy(): void {
-  //     this.stopScan();
-  // }
+  ngOnDestroy(): void {
+      this.stopScan();
+  }
   async checkPermission() {
     try {
       // check or request permission
