@@ -9,9 +9,10 @@ import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { SendImageComponent } from './pages/send-image/send-image.component';
-// import { HttpClientModule } from '@angular/common/http';
-// import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
-// import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
+
+import { AngularFireModule } from '@angular/fire/compat';
+import { firebaseConfig } from 'src/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SendImageComponent } from './pages/send-image/send-image.component';
     AppRoutingModule,
     IonicModule.forRoot(),
     QRCodeModule,
-    // HttpClientModule
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     // BarcodeScanner,
