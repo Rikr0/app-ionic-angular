@@ -8,6 +8,8 @@ import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QRCodeModule } from 'angularx-qrcode';
+import { SendImageComponent } from './pages/send-image/send-image.component';
+// import { HttpClientModule } from '@angular/common/http';
 // import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
 // import { BarcodeScanner } from '@capacitor-community/barcode-scanner';
 
@@ -16,13 +18,15 @@ import { QRCodeModule } from 'angularx-qrcode';
     AppComponent,
     DisplayQRComponent,
     ScanQRComponent,
-    HomeComponent
+    HomeComponent,
+    SendImageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IonicModule.forRoot(),
-    QRCodeModule
+    QRCodeModule,
+    // HttpClientModule
   ],
   providers: [
     // BarcodeScanner,

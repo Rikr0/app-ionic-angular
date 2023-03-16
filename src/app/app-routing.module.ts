@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
+import { SendImageComponent } from './pages/send-image/send-image.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'scan-qr',
     component: ScanQRComponent
+  },
+  {
+    path: 'send-image',
+    component: SendImageComponent
   },
 ];
 

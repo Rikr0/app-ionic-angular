@@ -21,8 +21,13 @@
     "@capacitor-community/barcode-scanner": "^3.0.3",
     "@capacitor/android": "^4.7.0",
     "@capacitor/angular": "^2.0.3",
+    "@capacitor/app": "4.1.1",
     "@capacitor/camera": "^4.1.4",
-    "@capacitor/core": "latest",
+    "@capacitor/core": "4.7.0",
+    "@capacitor/haptics": "4.1.0",
+    "@capacitor/keyboard": "4.1.1",
+    "@capacitor/share": "^4.1.1",
+    "@capacitor/status-bar": "4.1.1",
     "@ionic-native/barcode-scanner": "^5.36.0",
     "@ionic-native/core": "^5.36.0",
     "@ionic/angular": "^6.6.1",
@@ -36,6 +41,8 @@
     "@angular-devkit/build-angular": "^15.2.2",
     "@angular/cli": "~15.2.2",
     "@angular/compiler-cli": "^15.2.0",
+    "@capacitor/cli": "4.7.0",
+    "@ionic/angular-toolkit": "latest",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
@@ -43,8 +50,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.9.4",
-    "@ionic/angular-toolkit": "latest",
-    "@capacitor/cli": "latest"
+    "typescript": "~4.9.4"
   }
 }
