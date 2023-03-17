@@ -56,11 +56,10 @@ export class NotificationService {
       }
     );
 
-    // recibir notificación push en primer plano
+    // recibir notificación push
     PushNotifications.addListener('pushNotificationReceived',
       (notification: PushNotificationSchema) => {
         console.log('Push received: ' + JSON.stringify(notification));
-
       }
     );
 
@@ -68,7 +67,7 @@ export class NotificationService {
     PushNotifications.addListener('pushNotificationActionPerformed',
       (notification: ActionPerformed) => {
         console.log('Push action performed: ' + JSON.stringify(notification));
-        this.router.navigate(['/push-notificatiosn'])
+        this.router.navigate(['/push-notificatiosn']);
       }
     );
   }

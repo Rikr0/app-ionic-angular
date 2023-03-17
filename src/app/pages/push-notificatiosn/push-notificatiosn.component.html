@@ -3,9 +3,33 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Notificación push</ion-title>
+    <ion-title>Notificaciones push</ion-title>
   </ion-toolbar>
 </ion-header> 
 <ion-content>
- Token de notificaciones: {{tokenString}}
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>Notificaciones programadas todos los días:</h1>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              08:00 hrs.
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              12:00 hrs.
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              20:00 hrs.
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        <h3>Token de notificaciones: {{tokenString}}</h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
