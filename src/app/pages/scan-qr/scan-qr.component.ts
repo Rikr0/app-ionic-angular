@@ -61,39 +61,4 @@ export class ScanQRComponent implements OnDestroy {
     document.querySelector('body').classList.remove('scanner-active');
     this.content_visibility = '';
   }
-
-  
-
-
-
-
-
-  async addNewPhoto() {
-    const photo = await Camera.getPhoto({
-      resultType: CameraResultType.Uri,
-      source: CameraSource.Camera,
-      quality: 100
-    });
-    if (photo.webPath) {
-      this.photos.unshift(photo.webPath);
-    }
-  }
-  // async scan() {
-  //   console.log('Button 3 clicked');
-  //   try {
-  //     const result = await BarcodeScanner.scan();
-  //     alert(`El código QR escaneado es: ${result.text}`);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-  // scan() {
-  //   this.data = null;
-  //   this.barcodeScanner.scan().then(barcodeData => {
-  //     console.log('Barcode data', barcodeData);
-  //     this.data = barcodeData;
-  //   }).catch(err => {
-  //     console.log('Error', err);
-  //   });
-  // }
 }

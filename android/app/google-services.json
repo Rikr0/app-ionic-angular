@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728836205438",
+    "project_id": "backendionic-ecaa4",
+    "storage_bucket": "backendionic-ecaa4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728836205438:android:cf313c3e638080f42a612f",
+        "android_client_info": {
+          "package_name": "com.ricardo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728836205438-f7jiu32n6s5f2iq1tb65r5v9gi60mips.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuMqFJSqMJdHO2A0paXN5igkKhVI5eBOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728836205438-f7jiu32n6s5f2iq1tb65r5v9gi60mips.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

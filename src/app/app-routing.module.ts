@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DisplayQRComponent } from './pages/display-qr/display-qr.component';
 import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { SendImageComponent } from './pages/send-image/send-image.component';
+import { PushNotificatiosnComponent } from './pages/push-notificatiosn/push-notificatiosn.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'send-image',
     component: SendImageComponent
+  },
+  {
+    path: 'push-notificatiosn',
+    component: PushNotificatiosnComponent
   },
 ];
 

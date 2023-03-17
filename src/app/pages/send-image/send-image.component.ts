@@ -33,10 +33,10 @@ export class SendImageComponent {
   }
   async share(){
     await Share.share({
-      title: 'Compartir imágen via WhatsApp',
+      title: 'Compartir imágen',
       text: '¡Mira esta imágen!',
       url: this.selectedImage.path,
-      dialogTitle: 'Comparte con WhatsApp',
+      dialogTitle: 'Comparte a redes sociales',
     });
   }
 

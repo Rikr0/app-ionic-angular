@@ -9,6 +9,7 @@ import { ScanQRComponent } from './pages/scan-qr/scan-qr.component';
 import { HomeComponent } from './pages/home/home.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { SendImageComponent } from './pages/send-image/send-image.component';
+import { PushNotificatiosnComponent } from './pages/push-notificatiosn/push-notificatiosn.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { firebaseConfig } from 'src/environment';
@@ -20,7 +21,8 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
     DisplayQRComponent,
     ScanQRComponent,
     HomeComponent,
-    SendImageComponent
+    SendImageComponent,
+    PushNotificatiosnComponent
   ],
   imports: [
     BrowserModule,

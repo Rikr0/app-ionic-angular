@@ -7,15 +7,11 @@
   </ion-toolbar>
 </ion-header> 
 <ion-content [style.visibility]="content_visibility">
-  <ion-grid>
-    <ion-row>
-      <ion-col size="6" sizeMd="3" *ngFor="let photo of photos">
-        <ion-img [src]="photo"></ion-img>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-button expand="block" (click)="addNewPhoto()">Botón 3</ion-button>
-  <ion-button expand="block" (click)="startScan()">Escanear</ion-button>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="startScan()">
+      <ion-icon name="scan-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <ion-item *ngIf="scannedResult">
     <ion-label class="ion-text-wrap">Resultado del escaneo: {{ scannedResult }} </ion-label>
   </ion-item>
